@@ -1,0 +1,200 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+}
+
+/* DARK OVERLAY (so text is readable) */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* MAIN */
+.main {
+    margin-left: 250px;
+    padding: 25px;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+    background: rgba(255,255,255,0.12);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ICON CARDS */
+.stats {
+    display: flex;
+    gap: 15px;
+}
+
+.stat-card {
+    flex: 1;
+    text-align: center;
+    background: rgba(255,255,255,0.12);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.stat-card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+button, input[type="submit"] {
+    background: #2563eb;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* LOGIN PAGE */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* IMAGE SIDE */
+.login-image {
+    flex: 1;
+    background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644') no-repeat center/cover;
+}
+
+/* FORM SIDE */
+.login-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e293b;
+}
+
+.login-box {
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+
+
+/* TEST PAGE FIX */
+.test-container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.test-card {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.test-card p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.test-option {
+    display: block;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.test-option:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 16px;
+}
