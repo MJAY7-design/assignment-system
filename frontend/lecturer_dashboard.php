@@ -7,6 +7,7 @@ if (!isset($_SESSION['email']) || $_SESSION['role'] != 'lecturer') {
     exit();
 }
 
+
 include("../backend/db.php");
 
 $email = $_SESSION['email'];
